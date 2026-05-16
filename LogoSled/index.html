@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина по ЛогоМирам</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="title-overlay">
+        <button type="button" class="starter-button">
+            <img src="Images/КНОПКА.png" alt="Начать игру">
+        </button>
+    </div>
+
+    <div class="background-layer" id="layer-1">
+        <!-- Уровень 1 -->
+        <div class="quiz-level" id="level-1">
+            <div class="question-row">
+                <p class="question">Как называются документы, создаваемые в среде ЛогоМиры?</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-1" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Документ</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-1" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Проект</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-1" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Микромир</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="1">
+                <img src="Images/кнопка1.png" alt="проверить">
+            </button>
+        </div>
+
+        <!-- Уровень 2 -->
+        <div class="quiz-level2" id="level-2" style="display: none;">
+            <div class="question-row">
+
+                <p class="question">Какое имя нельзя дать черепашке?</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-2" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Ч1</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-2" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Машина</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-2" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Персонаж 1</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="2">
+                <img src="Images/кнопка1.png" alt="проверить">
+            </button>
+        </div>
+
+        <!-- Уровень 3 -->
+        <div class="quiz-level3" id="level-3" style="display: none;">
+            <div class="question-row">
+
+                <p class="question">Ученик записал в проекте название листа: ПРАВИЛА ИГРЫ. Какая ошибка допущена в
+                    данном названии листа проекта?</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-3" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Нельзя писать имя листа заглавными буквами</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-3" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">В имени листа не должно быть пробелов</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-3" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Имя листа должно состоять из одного слова</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="3">
+                <img src="Images/кнопка1.png" alt="проверить">
+            </button>
+        </div>
+
+        <!-- Уровень 4 -->
+        <div class="quiz-level4" id="level-4" style="display: none;">
+            <div class="question-row">
+                <p class="question">В какой части среды ЛогоМиры нельзя записывать команды для черепашки?</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-4" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">На листе проекта</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-4" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">В поле команд</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-4" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">На рабочем поле</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-4" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">В кнопке</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="4">
+                <img src="Images/кнопка1.png" alt="проверить">
+            </button>
+        </div>
+
+        <!-- Уровень 5 -->
+        <div class="quiz-level5" id="level-5" style="display: none;">
+            <div class="question-row">
+                <p class="question">Какая ошибка допущена при написании данной процедуры?<br><br>это Отрезок<br>по нк 90
+                    вп 10 пп конец</p>
+            </div>
+            <div class="answers-list">
+                <label class="answer-option">
+                    <input type="radio" name="level-5" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Слова ЭТО и КОНЕЦ должны находиться в отдельных строках</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-5" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Нельзя писать название процедуры с заглавной буквы</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-5" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">Нельзя писать несколько команд в одной строке</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="5">
+                <img src="Images/кнопка1.png" alt="проверить">
+        </div>
+
+        <img id="turtle-img" src="images/черепашка.png" alt="Черепашка">
+    </div>
+
+    <div class="background-layer2" id="layer-2" style="display: none;">
+        <!-- Уровень 6 -->
+        <div class="quiz-level" id="level-6">
+            <div class="question-row">
+                <p class="question">Какие команды перемещают черепашку в центр Рабочего поля?</p>
+            </div>
+            <div class="answers-list">
+                <label class="answer-option">
+                    <input type="checkbox" name="level-6" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ДОМОЙ</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-6" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">СГ</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-6" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">НМ[0 0]</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-6" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">СОТРИ</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-6" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ВПЕРЁД 0</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="6">
+                <img src="Images/кнопка2.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 7 -->
+        <div class="quiz-level2" id="level-7" style="display: none;">
+            <div class="question-row">
+                <p class="question">Какая команда служит для закраски замкнутого контура?</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-7" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ЗАКРАСЬ</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-7" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">КРАСЬ</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-7" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ЗАЛИВКА</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="7">
+                <img src="Images/кнопка2.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 8 -->
+        <div class="quiz-level3" id="level-8" style="display: none;">
+            <div class="question-row">
+                <p class="question">Какие команды не имеют числового параметра?</p>
+            </div>
+            <div class="answers-list">
+                <label class="answer-option">
+                    <input type="checkbox" name="level-8" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ДОМОЙ</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-8" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">СГ</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-8" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ВП</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-8" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ПО</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-8" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ПР</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-8" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ЛВ</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="8">
+                <img src="Images/кнопка2.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 9 -->
+        <div class="quiz-level4" id="level-9" style="display: none;">
+            <div class="question-row">
+
+                <p class="question">Какое значение имеет параметр в команде ЖДИ 1?</p>
+            </div>
+            <div class="answers-list">
+                <label class="answer-option">
+                    <input type="radio" name="level-9" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">1/10 секунды</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-9" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">1 секунда</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-9" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">10 секунд</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="9">
+                <img src="Images/кнопка2.png" alt="проверить">
+        </div>
+
+
+        <!-- Уровень 10 -->
+        <div class="quiz-level5" id="level-10" style="display: none;">
+            <div class="question-row">
+                <p class="question">Какие команды служат для установки угла поворота черепашки?</p>
+            </div>
+            <div class="answers-list">
+   
+                <label class="answer-option">
+                    <input type="checkbox" name="level-10" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ЛВ</span>
+                </label>
+
+                <label class="answer-option">
+                    <input type="checkbox" name="level-10" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">НК</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-10" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ПО</span>
+                </label>
+                             <label class="answer-option">
+                    <input type="checkbox" name="level-10" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ПР</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-10" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ВП</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-10" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">НП</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="10">
+                <img src="Images/кнопка2.png" alt="проверить">
+        </div>
+
+        <img id="turtle-img-2" src="images/черепашка.png" alt="Черепашка">
+    </div>
+
+    <div class="background-layer3" id="layer-3" style="display: none;">
+        <!-- Уровень 11 -->
+        <div class="quiz-level" id="level-11">
+            <div class="question-row">
+                <p class="question">Укажи названия датчиков среды ЛогоМиры:</p>
+            </div>
+            <div class="answers-list">
+                <label class="answer-option">
+                    <input type="checkbox" name="level-11" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ЦВЕТ</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-11" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">РАЗМЕР_ПЕРА</span>
+                </label>
+  
+                <label class="answer-option">
+                    <input type="checkbox" name="level-11" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">НОВ_ФОРМА</span>
+                </label>
+
+                              <label class="answer-option">
+                    <input type="checkbox" name="level-11" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">ФОРМА</span>
+                </label>
+                <label class="answer-option">
+                    <input type="checkbox" name="level-11" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">НОВ_ЦВЕТ</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="11">
+                <img src="Images/кнопка3.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 12 -->
+        <div class="quiz-level2" id="level-12" style="display: none;">
+            <div class="question-row">
+                <p class="question">Укажи диапазон действия датчика РАЗМЕР.</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-12" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 0 до 128</span>
+                </label>
+                                <label class="answer-option">
+                    <input type="radio" name="level-12" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 5 до 160</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-12" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 0 до 139</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="12">
+                <img src="Images/кнопка3.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 13 -->
+        <div class="quiz-level3" id="level-13" style="display: none;">
+            <div class="question-row">
+                <p class="question">Укажи диапазон действия датчика ЦВЕТ.</p>
+            </div>
+            <div class="answers-list">
+                <label class="answer-option">
+                    <input type="radio" name="level-13" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 5 до 160</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-13" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 0 до 128</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-13" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 0 до 139</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="13">
+                <img src="Images/кнопка3.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 14 -->
+        <div class="quiz-level4" id="level-14" style="display: none;">
+            <div class="question-row">
+                <p class="question">Укажи диапазон действия датчика РАЗМЕР_ПЕРА.</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-14" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 0 до 128</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-14" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 0 до 139</span>
+                </label>
+                                <label class="answer-option">
+                    <input type="radio" name="level-14" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 1 до 30</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="14">
+                <img src="Images/кнопка3.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 15 -->
+        <div class="quiz-level5" id="level-15" style="display: none;">
+            <div class="question-row">
+                <p class="question">Укажи диапазон действия датчика ФОРМА.</p>
+            </div>
+            <div class="answers-list">
+                <label class="answer-option">
+                    <input type="radio" name="level-15" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 5 до 160</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-15" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 0 до 128</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-15" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">От 0 до 139</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="15">
+                <img src="Images/кнопка3.png" alt="проверить">
+        </div>
+
+        <img id="turtle-img-3" src="images/черепашка.png" alt="Черепашка">
+    </div>
+
+    <div class="background-layer4" id="layer-4" style="display: none;">
+        <!-- Уровень 16 -->
+        <div class="quiz-level" id="level-16">
+            <div class="question-row">
+                <p class="question">Начальное направление черепашки показано стрелкой ➞. Какое значение в градусах по
+                    компасу оно примет после выполнения команды ПР 90?</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-16" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">270</span>
+                </label>
+                                <label class="answer-option">
+                    <input type="radio" name="level-16" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">180</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-16" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">0</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="16">
+                <img src="Images/кнопка4.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 17 -->
+        <div class="quiz-level2" id="level-17" style="display: none;">
+            <div class="question-row">
+                <p class="question">Начальное направление черепашки показано стрелкой ⬇. Какое значение в градусах по
+                    компасу оно примет после выполнения команды ЛВ 90?</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-17" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">270</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-17" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">180</span>
+                </label>
+                                <label class="answer-option">
+                    <input type="radio" name="level-17" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">90 </span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="17">
+                <img src="Images/кнопка4.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 18 -->
+        <div class="quiz-level3" id="level-18" style="display: none;">
+            <div class="question-row">
+                <p class="question">Начальное направление черепашки показано стрелкой ⬈. Какое значение в градусах по
+                    компасу оно примет после выполнения команды ПР 135?</p>
+            </div>
+            <div class="answers-list">
+                <label class="answer-option">
+                    <input type="radio" name="level-18" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">180</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-18" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">270</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-18" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">225</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="18">
+                <img src="Images/кнопка4.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 19 -->
+        <div class="quiz-level4" id="level-19" style="display: none;">
+            <div class="question-row">
+                <p class="question">Начальное направление черепашки показано стрелкой ⬋. Какое значение в градусах по
+                    компасу оно примет после выполнения команды НК 45?</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-19" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">90</span>
+                </label>
+                                <label class="answer-option">
+                    <input type="radio" name="level-19" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">45</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-19" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">135</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="19">
+                <img src="Images/кнопка4.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 20 -->
+        <div class="quiz-level5" id="level-20" style="display: none;">
+            <div class="question-row">
+                <p class="question">Начальное направление черепашки показано стрелкой ⬆. Какое значение в градусах по
+                    компасу оно примет после выполнения команды НК 315?</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-20" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">45</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-20" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">135</span>
+                </label>
+                                <label class="answer-option">
+                    <input type="radio" name="level-20" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">315</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="20">
+                <img src="Images/кнопка4.png" alt="проверить">
+        </div>
+
+        <img id="turtle-img-4" src="images/черепашка.png" alt="Черепашка">
+    </div>
+
+    <div class="background-layer5" id="layer-5" style="display: none;">
+        <!-- Уровень 21 -->
+        <div class="quiz-level" id="level-21">
+            <div class="question-row">
+                <p class="question">Укажи правильную команду плавного изменения размера черепашки:</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-21" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">нрз 0 повтори 160 [нрз размер + 1 жди 1]</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-21" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">нрз 5 повтори 155 [нрз размер - 1]</span>
+                </label>
+                                <label class="answer-option">
+                    <input type="radio" name="level-21" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">нрз 5 повтори 155 [нрз размер + 1 жди 1]</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="21">
+                <img src="Images/кнопка5.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 22 -->
+        <div class="quiz-level2" id="level-22" style="display: none;">
+            <div class="question-row">
+                <p class="question">Укажи правильную команду для создания переменной БАЛЛ и установки её начального
+                    значения:</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-22" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">пусть :балл 0</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-22" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">пусть “балл = 0</span>
+                </label>
+                                <label class="answer-option">
+                    <input type="radio" name="level-22" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">пусть “балл 0</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="22">
+                <img src="Images/кнопка5.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 23 -->
+        <div class="quiz-level3" id="level-23" style="display: none;">
+            <div class="question-row">
+                <p class="question">Укажи правильную команду для увеличения значения переменной БАЛЛ на 1:</p>
+            </div>
+            <div class="answers-list">
+                <label class="answer-option">
+                    <input type="radio" name="level-23" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">пусть “балл :балл + 1</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-23" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">пусть :балл балл + 1</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-23" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">пусть “балл = балл + 1</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="23">
+                <img src="Images/кнопка5.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 24 -->
+        <div class="quiz-level4" id="level-24" style="display: none;">
+            <div class="question-row">
+                <p class="question">Укажи правильную команду для перехода на лист Отлично:</p>
+            </div>
+            <div class="answers-list">
+    
+                <label class="answer-option">
+                    <input type="radio" name="level-24" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">если балл = 5 Отлично</span>
+                </label>
+                            <label class="answer-option">
+                    <input type="radio" name="level-24" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">если :балл = 5 [Отлично]</span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-24" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">если “балл = 5 [Отлично]</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="24">
+                <img src="Images/кнопка5.png" alt="проверить">
+        </div>
+
+        <!-- Уровень 25 -->
+        <div class="quiz-level5" id="level-25" style="display: none;">
+            <div class="question-row">
+                <p class="question">Укажи верную команду для проверки правильности ответа:</p>
+            </div>
+            <div class="answers-list">
+
+                <label class="answer-option">
+                    <input type="radio" name="level-25" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">если_иначе :балл = 5 [сообщи [Верно]] </span>
+                </label>
+                                <label class="answer-option">
+                    <input type="radio" name="level-25" value="correct">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">если_иначе :балл = 5 [сообщи [Верно]] [сообщи [Неверно]] </span>
+                </label>
+                <label class="answer-option">
+                    <input type="radio" name="level-25" value="wrong">
+                    <span class="checkmark"></span>
+                    <span class="answer-text">если :балл = 5 [сообщи [Верно]] [сообщи [Неверно]]</span>
+                </label>
+            </div>
+            <button class="main-btn1 submit-btn" data-level="25">
+                <img src="Images/кнопка5.png" alt="проверить">
+        </div>
+
+        <img id="turtle-img-5" src="images/черепашка.png" alt="Черепашка">
+    </div>
+
+    <div id="path-container">
+        <!-- Слой 1 (уровни 1-5) -->
+        <div class="path-point" style="top: 29.22%; left: 63.67%;"></div>
+        <div class="path-point" style="top: 34.78%; left: 72.00%;"></div>
+        <div class="path-point" style="top: 25.89%; left: 80.33%;"></div>
+        <div class="path-point" style="top: 40.33%; left: 86.00%;"></div>
+
+        <!-- Слой 2 (уровни 6-10) -->
+        <div class="path-point" style="top: 37.33%; left: 55.67%;"></div>
+        <div class="path-point" style="top: 31.22%; left: 65.67%;"></div>
+        <div class="path-point" style="top: 38.78%; left: 71.00%;"></div>
+        <div class="path-point" style="top: 30.89%; left: 80.33%;"></div>
+        <div class="path-point" style="top: 41.00%; left: 83.00%;"></div>
+
+        <!-- Слой 3 (уровни 11-15) -->
+        <div class="path-point" style="top: 50.00%; left: 58.00%;"></div>
+        <div class="path-point" style="top: 40.00%; left: 62.00%;"></div>
+        <div class="path-point" style="top: 40.00%; left: 72.00%;"></div>
+        <div class="path-point" style="top: 31.00%; left: 75.00%;"></div>
+        <div class="path-point" style="top: 30.00%; left: 85.00%;"></div>
+
+
+        <!-- Слой 4 (уровни 16-20) -->
+        <div class="path-point" style="top: 39.33%; left: 55.67%;"></div>
+        <div class="path-point" style="top: 32.22%; left: 63.67%;"></div>
+        <div class="path-point" style="top: 38.78%; left: 70.00%;"></div>
+        <div class="path-point" style="top: 30.89%; left: 78.33%;"></div>
+        <div class="path-point" style="top: 36.00%; left: 86.00%;"></div>
+
+        <!-- Слой 5 (уровни 21-25) -->
+        <div class="path-point" style="top: 48.00%; left: 57.00%;"></div>
+        <div class="path-point" style="top: 45.00%; left: 63.00%;"></div>
+        <div class="path-point" style="top: 48.00%; left: 72.00%;"></div>
+        <div class="path-point" style="top: 45.00%; left: 77.00%;"></div>
+        <div class="path-point" style="top: 48.00%; left: 87.00%;"></div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
